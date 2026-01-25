@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W4r1oo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Décorations flottantes -->
+        <div class="floating-decorations">
+            <!-- Cœurs néon -->
+            <div class="deco deco-heart">🎮</div>
+            <div class="deco deco-heart2">🕹️</div>
+            
+            <!-- Manettes de jeu -->
+            <div class="deco deco-gamepad">🎮</div>
+            <div class="deco deco-controller">🕹️</div>
+            
+            <!-- Micro -->
+            <div class="deco deco-mic">🎙️</div>
+            
+            <!-- Logo Twitch -->
+            <div class="deco deco-twitch">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                </svg>
+            </div>
+            
+            <!-- Points lumineux -->
+            <div class="deco-dots dot1"></div>
+            <div class="deco-dots dot2"></div>
+            <div class="deco-dots dot3"></div>
+            
+            <!-- Lignes ondulées -->
+            <div class="wavy-line wave1"></div>
+            <div class="wavy-line wave2"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1> <img src="logo-warioo.png" width="50px" /> W4r1oo <img src="logo-warioo.png" width="50px" /> </h1>
+            
+            <div class="counters">
+                <div class="counter">
+                    💜 Twitch : 285 followers
+                </div>
+            </div>
+            <div class="counters">
+                <div class="counter" id="Instagram-counter">
+                    📸 Instagram : 24 followers
+                </div>
+ 
+                <div class="counter" id="Tiktok-counter">
+                    🎵 TikTok : 6 followers
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="floating-decorations">
+            <div class="deco-dots dot1"></div>
+            <div class="deco-dots dot2"></div>
+        </div>
+        <h2>À propos :</h2>
+        <p>
+            <img src="logo-warioo.png" width="25px" /> Bienvenue sur W4r1oo ! <img src="logo-warioo.png" width="25px" /> <br> <br>
+            Ancien Mod Twitch/Discord-CM-Dev Discord de ton streameur préféré ! <br>
+            (J'essaye de vous proposer du niveau, mais ça pas sûr ! 🤣) <br>
+        </p>
+    </section>
+
+    <!-- Social Links W4r1oo -->
+    <section>
+        <h2>🎥 Retrouve W4r1oo 🎥</h2>
+        <div class="social-grid">
+            <a href="https://x.com/WarioWiller" target="_blank" class="social-btn youtube">
+                <span>📺 X(twitter)</span>
+            </a>
+            <a href="https://www.twitch.tv/W4r1oo" target="_blank" class="social-btn twitch">
+                <span>💜 Twitch</span>
+            </a>
+            <a href="https://www.tiktok.com/@WarioWiller" target="_blank" class="social-btn tiktok">
+                <span>🎵 TikTok</span>
+            </a>
+            <a href="https://www.instagram.com/wariowiller/" target="_blank" class="social-btn instagram">
+                <span>📸 Instagram</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Live Twitch Section -->
+    <section>
+        <div class="section-separator">
+            <h2 class="section-title">🔴 Live Twitch 🔴</h2>
+            <p style="opacity: 0.7; margin-bottom: 20px;">Regarde le stream en direct !</p>
+        </div>
+        <div class="video-container">
+            <div id="twitch-embed"></div>
+        </div>
+    </section>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: "100%",
+    height: 480,
+    channel: "W4r1oo",
+    parent: ["tonsite.com"]
+  });
+</script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-top: 10px; font-size: 0.9em;">Fait pour la communauté</p>
+    </footer>
+
+</body>
+</html>

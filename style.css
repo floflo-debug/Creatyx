@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    overflow-x: hidden;
+
+}
+
+.hero {
+    background: linear-gradient(135deg, #1d1d1d 0%, #3a3a3a 50%, #5a5a5a 100%);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+    animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 30px rgba(207, 207, 207, 0.8);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px rgba(179, 179, 179, 0.8); }
+    to { text-shadow: 0 0 40px rgb(0, 0, 0), 0 0 60px rgba(255, 255, 255, 0.8); }
+}
+
+
+section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #3a3a3a, #c5c5c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+
+/* bouton Astrofyke */
+.social-btn-Astrofyke {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-Astrofyke::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-Astrofyke:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-Astrofyke span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn-Astrofyke:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.5);
+}
+
+
+/* bouton CocoLouna */
+.social-btn-CocoLouna {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(226, 38, 211);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-CocoLouna::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-CocoLouna:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-CocoLouna span {
+    position: relative;
+    z-index: 1;
+}
+
+
+.social-btn-CocoLouna:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 69, 199, 0.5);
+}
+
+
+/* bouton LMYoda */
+.social-btn-LMYoda {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(82, 219, 82);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-LMYoda::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-LMYoda:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-LMYoda span {
+    position: relative;
+    z-index: 1;
+}
+
+
+.social-btn-LMYoda:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(100, 255, 69, 0.5);
+}
+
+
+/* bouton Maevys */
+.social-btn-Maevys {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(184, 0, 0);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-Maevys::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-Maevys:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-Maevys span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn-Maevys:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 14, 14, 0.5);
+}
+
+
+/* bouton Zeykirox37 */
+.social-btn-Zeykirox37 {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(235, 231, 27);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-Zeykirox37::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-Zeykirox37:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-Zeykirox37 span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn-Zeykirox37:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(233, 255, 37, 0.5);
+}
+
+
+/* bouton W4r1oo */
+.social-btn-W4r1oo {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-W4r1oo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-W4r1oo:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-W4r1oo span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn-W4r1oo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.5);
+}
+
+
+/* bouton Zocian */
+.social-btn-Zocian {
+    display: block;
+    padding: 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(68, 151, 245);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-btn-Zocian::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.social-btn-Zocian:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.social-btn-Zocian span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-btn-Zocian:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(35, 173, 236, 0.5);
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}

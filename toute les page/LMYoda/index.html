@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMYoda_Officiel </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Décorations flottantes -->
+        <div class="floating-decorations">
+            <!-- Manettes de jeu gauche -->
+            <div class="deco deco-gamepad2">🎮</div>
+            <div class="deco deco-controller2">🕹️</div>
+            
+            <!-- Manettes de jeu droite -->
+            <div class="deco deco-gamepad">🎮</div>
+            <div class="deco deco-controller">🕹️</div>
+            
+            <!-- Micro -->
+            <div class="deco deco-mic">🎙️</div>
+            
+            <!-- Logo Twitch -->
+            <div class="deco deco-twitch">
+                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                </svg>
+            </div>
+            
+            <!-- Points lumineux -->
+            <div class="deco-dots dot1"></div>
+            <div class="deco-dots dot2"></div>
+            <div class="deco-dots dot3"></div>
+            
+            <!-- Lignes ondulées -->
+            <div class="wavy-line wave1"></div>
+            <div class="wavy-line wave2"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1> <img src="pp-Yoda.jpg" width="55px"/> LMYoda_Officiel <img src="pp-Yoda.jpg" width="55px"/></h1>
+            
+            <div class="counters">
+                <div class="counter" id="youtube-counter">
+                    📺 YouTube : <span class="loading">Chargement...</span>
+                </div>
+                <div class="counter">
+                    💜 Twitch : 3K followers
+                </div>
+            </div>
+            <div class="counters">
+                <div class="counter" id="Instagram-counter">
+                    📸 Instagram : 245 followers
+                </div>
+ 
+                <div class="counter" id="Tiktok-counter">
+                    🎵 TikTok : 1753 followers
+                </div>
+            </div>
+
+            <a href="https://www.youtube.com/@LMYoda" target="_blank" class="subscribe-btn">
+                🔔 S'abonner sur YouTube 🔔
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="floating-decorations">
+            <div class="deco-dots dot1"></div>
+            <div class="deco-dots dot2"></div>
+        </div>
+        <h2>À propos :</h2>
+        <p>
+            <img src="pp-Yoda.jpg" width="25px"/> Bienvenue sur LMYoda_Officiel !<img src="pp-Yoda.jpg" width="25px"/> <br> <br>
+            🎮 Stéphane | LMYoda_officiel🔥 Fortnite & Game Pass💥 Fun, clutchs et découvertes⚡<br>
+            Rejoins la communauté LMY, la Force est avec nous 💚
+
+        </p>
+    </section>
+
+    <!-- Social Links LMYoda_Officiel -->
+    <section>
+        <h2>🎥 Retrouve LMYoda_Officiel 🎥</h2>
+        <div class="social-grid">
+            <a href="https://www.youtube.com/@LMYoda" target="_blank" class="social-btn youtube">
+                <span>📺 YouTube 📺</span>
+            </a>
+            <a href="https://www.twitch.tv/LMYoda_Officiel" target="_blank" class="social-btn twitch">
+                <span>💜 Twitch 💜</span>
+            </a>
+            <a href="https://www.tiktok.com/@LMYoda_Officiel" target="_blank" class="social-btn tiktok">
+                <span>🎵 TikTok 🎵</span>
+            </a>
+            <a href="https://www.instagram.com/LMYoda_Officiel/" target="_blank" class="social-btn instagram">
+                <span>📸 Instagram 📸</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Live Twitch Section -->
+    <section>
+        <div class="section-separator">
+            <h2 class="section-title">🔴 Live Twitch 🔴</h2>
+            <p style="opacity: 0.7; margin-bottom: 20px;">Regarde le stream en direct !</p>
+        </div>
+        <div class="video-container">
+            <div id="twitch-embed"></div>
+        </div>
+    </section>
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<script type="text/javascript">
+  new Twitch.Embed("twitch-embed", {
+    width: "100%",
+    height: 480,
+    channel: "LMYoda_Officiel",
+    parent: ["tonsite.com"]
+  });
+</script>
+
+    <!-- Latest Videos Section -->
+    <section>
+        <div class="section-separator">
+            <h2 class="section-title">🎬 Dernières vidéos 🎬</h2>
+        </div>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/6vOT7XVhJ9w" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+
+<!-- Latest tiktok Section -->
+
+ <section>
+        <div class="section-separator">
+            <h2 class="section-title">📸 Derniers contenus 📸</h2>
+        </div>
+        <div class="social-videos-grid">
+            <div class="video-card">
+                <h3 class="video-card-title">🎵 TikTok 🎵</h3>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lmyoda_officiel/video/7579416287051287830" data-video-id="7579416287051287830" style="max-width: 605px;min-width: 325px;">
+                    <section></section>
+                </blockquote>
+            </div>
+            
+            <div class="video-card">
+                <h3 class="video-card-title">📸 Instagram Reel 📸</h3>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C63aid3qR07/?utm_source=ig_embed" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-top: 10px; font-size: 0.9em;">Fait pour la communauté</p>
+    </footer>
+
+    <!-- Script for YouTube Counter -->
+    <script>
+        fetch("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCpZeu6tC8Hfd-OhqO98HNfA&key=AIzaSyCcan4zJewbJmPQbW9GmS41DBjkFXdDKG8")
+            .then(res => res.json())
+            .then(data => {
+                const count = parseInt(data.items[0].statistics.subscriberCount);
+                const formatted = count.toLocaleString('fr-FR');
+                document.getElementById("youtube-counter").innerHTML = `📺 YouTube : ${formatted} abonnés`;
+            })
+            .catch(error => {
+                document.getElementById("youtube-counter").innerHTML = "📺 YouTube : + abonnés";
+                console.error("Erreur lors du chargement du compteur:", error);
+            });
+    </script>
+
+</body>
+</html>
