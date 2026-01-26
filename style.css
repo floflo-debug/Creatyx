@@ -88,6 +88,13 @@ h2 {
     margin: 40px 0;
 }
 
+.last-modified {
+    position: relative;
+    margin-left: 800px;
+    font-size: 0.85em;
+    color: #ffffff;
+}
+
 
 /* bouton Astrofyke */
 .social-btn-Astrofyke {
@@ -404,4 +411,5 @@ footer {
     text-align: center;
     margin-top: 80px;
     border-top: 2px solid rgba(0, 0, 0, 0.3);
+
 }
