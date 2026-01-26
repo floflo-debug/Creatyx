@@ -17,6 +17,7 @@
     </header>
     <section class="about">
         <h2>À propos :</h2>
+        <p class="last-modified">Dernière modification : <span id="lastModified"></span></p>
         <p>
             Créatyx est un espace en ligne dédié aux créateurs de tous domaines. <br> <br>
 
@@ -33,6 +34,9 @@
 
         </p>
     </section>
+<script>
+document.getElementById('lastModified').textContent = document.lastModified;
+</script>
 
     <section>
         <div class="social-grid">
@@ -91,5 +95,6 @@
 </body>
 
 </html>
+
 
 
